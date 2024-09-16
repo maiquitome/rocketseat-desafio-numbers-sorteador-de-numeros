@@ -31,6 +31,21 @@
     #91a1fa 98.93%
   );
   --linear-gradient-content: linear-gradient(90deg, #c7c9cc 0%, #3d3d3d 100%);
+
+  --font-family-display: "Sora", system-ui;
+  --font-display-large: 800 4.5rem/130% var(--font-family-display);
+  --font-display-medium: 800 2.5rem/130% var(--font-family-display);
+  --font-display-small: 800 2rem/130% var(--font-family-display);
+
+  --font-family-mono: "Roboto Mono", monospace;
+  --font-overline: 700 1rem/150% var(--font-family-mono);
+
+  --font-family-sans-serif: "Roboto Flex", sans-serif;
+  --font-paragraph-large: 500 1rem/150% var(--font-family-sans-serif);
+  --font-paragraph-medium: 500 0.875rem/150% var(--font-family-sans-serif);
+  --font-paragraph-small: 500 0.75rem/150% var(--font-family-sans-serif);
+  --font-label-medium: 500 1.25rem/150% var(--font-family-sans-serif);
+  --font-label-small: 500 1rem/150% var(--font-family-sans-serif);
 }
 
 body {
