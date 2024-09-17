@@ -44,8 +44,9 @@
   --font-paragraph-large: 500 1rem/150% var(--font-family-sans-serif);
   --font-paragraph-medium: 500 0.875rem/150% var(--font-family-sans-serif);
   --font-paragraph-small: 500 0.75rem/150% var(--font-family-sans-serif);
-  --font-label-medium: 500 1.25rem/150% var(--font-family-sans-serif);
-  --font-label-small: 500 1rem/150% var(--font-family-sans-serif);
+
+  --font-label-large: 700 1.25rem/150% var(--font-family-sans-serif);
+  --font-label-medium: 700 1rem/150% var(--font-family-sans-serif);
 }
 
 * {
