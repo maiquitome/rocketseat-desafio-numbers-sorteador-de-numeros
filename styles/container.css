@@ -1,0 +1,18 @@
+#container {
+  padding: 4.75rem 2.1875rem 9.5625rem 2.1875rem;
+  max-width: 73rem;
+  margin: auto;
+  & #logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6875rem;
+    transform: translateX(-0.875rem);
+    & img {
+      height: 2.125rem;
+    }
+    & span {
+      color: var(--color-content-primary);
+      font: 800 1.5rem var(--font-family-display);
+    }
+  }
+}
