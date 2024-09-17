@@ -1,0 +1,116 @@
+main {
+  padding-top: 5.5625rem;
+  display: flex;
+  justify-content: space-between;
+  & > div:first-child {
+    & div.overline {
+      padding-bottom: 0.75rem;
+      font: var(--font-overline);
+      background-color: var(--color-content-primary); /* Fallback */
+      background: var(--linear-gradient-content);
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+    & h1 {
+      color: var(--color-content-primary);
+      font: var(--font-display-large);
+    }
+    & div#info-container {
+      margin-top: 2.375rem;
+      & div.info {
+        max-width: 22.375rem;
+        display: flex;
+        gap: 0.5rem;
+
+        &:first-child {
+          padding-bottom: 2.25rem;
+        }
+        & img {
+          margin-bottom: auto;
+        }
+        & div {
+          & h2 {
+            font: var(--font-paragraph-medium);
+            color: var(--color-content-brand);
+          }
+          & p {
+            font: var(--font-paragraph-small);
+            color: var(--color-content-secondary);
+          }
+        }
+      }
+    }
+  }
+  & > div:last-child {
+    max-width: 30.125rem;
+    margin-block: 2.125rem;
+    & div.label-large {
+      font: var(--font-label-large);
+      color: var(--color-content-primary);
+    }
+    & p {
+      color: var(--color-content-secondary);
+      font: var(--font-paragraph-large);
+      padding-top: 0.125rem;
+    }
+    & form {
+      & div#numbers-container {
+        padding-block: 2.5rem;
+        & div#numbers-wrapper {
+          padding-bottom: 1.25rem;
+          display: flex;
+          gap: 0.5rem;
+          & div.number-wrapper {
+            & div.number-label {
+              font: var(--font-label-medium);
+              color: var(--color-content-secondary);
+              padding-bottom: 0.5rem;
+              text-align: center;
+            }
+            & input.number {
+              width: 5.375rem;
+              height: 3.5rem;
+              background-color: var(--color-background-secondary);
+              border-radius: 0.5rem;
+              border: none;
+
+              color: var(--color-content-primary);
+              font: var(--font-display-small);
+              line-height: 0;
+
+              text-align: center;
+            }
+          }
+        }
+        & div#switch-wrapper {
+          color: var(--color-content-primary);
+          font: 400 0.75rem/150% var(--font-family-display);
+
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+      & button {
+        width: 100%;
+        height: 3.5rem;
+        background-color: var(--color-background-tertiary);
+        color: var(--color-content-primary);
+        border-radius: 0.5rem;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        font: var(--font-label-medium);
+        line-height: 0;
+      }
+    }
+  }
+}
