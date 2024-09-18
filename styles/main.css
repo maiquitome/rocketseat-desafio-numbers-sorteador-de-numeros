@@ -97,8 +97,9 @@ main {
       }
       & button {
         width: 100%;
+        width: 30.125rem;
         height: 3.5rem;
-        background-color: var(--color-background-tertiary);
+        background: transparent;
         color: var(--color-content-primary);
         border-radius: 0.5rem;
         border: none;
@@ -110,6 +111,29 @@ main {
 
         font: var(--font-label-medium);
         line-height: 0;
+
+        & span,
+        & img {
+          z-index: 1;
+        }
+
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background: var(--color-background-tertiary);
+          width: inherit;
+          height: inherit;
+          border-radius: 0.5em;
+        }
+        &:hover {
+          background: var(--linear-gradient-border);
+          &::after {
+            background: var(--color-background-secondary);
+            width: 99.34%;
+            height: 3.3rem;
+          }
+        }
       }
     }
   }
