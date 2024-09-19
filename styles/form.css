@@ -93,48 +93,9 @@ form {
     }
   }
   & button {
-    width: 100%;
-    /* width: 30.125rem; */
-    height: 3.5rem;
-    background: transparent;
-    color: var(--color-content-primary);
-    border-radius: 0.5rem;
-    border: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-
-    font: var(--font-label-medium);
-    line-height: 0;
-
-    & span,
-    & img {
-      z-index: 1;
-    }
-
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      background: var(--color-background-tertiary);
-      width: inherit;
-      height: inherit;
-      border-radius: 0.5em;
-    }
     &:hover {
-      background: var(--linear-gradient-border);
-
-      animation: changeGradient 500ms 0ms infinite linear;
-
       & img {
         animation: changeIconPlace 2s 0ms infinite ease-in-out;
-      }
-      &::after {
-        background: var(--color-background-secondary);
-        width: 99.34%;
-        height: 3.3rem;
       }
     }
   }
@@ -143,68 +104,5 @@ form {
 @keyframes changeIconPlace {
   50% {
     transform: translateX(50%);
-  }
-}
-
-@keyframes changeGradient {
-  0% {
-    background: linear-gradient(
-      192.78deg,
-      #77c0af 9.02%,
-      #d1dc97 21.38%,
-      #e9a9b3 35.8%,
-      #d586e0 63.82%,
-      #91a1fa 79.48%
-    );
-  }
-  20% {
-    background: linear-gradient(
-      91.26deg,
-      #77c0af 0%,
-      #d1dc97 14.84%,
-      #e9a9b3 32.15%,
-      #d586e0 65.79%,
-      #91a1fa 84.58%
-    );
-  }
-  40% {
-    background: linear-gradient(
-      271.26deg,
-      #77c0af 0.52%,
-      #d1dc97 15.36%,
-      #e9a9b3 32.67%,
-      #d586e0 66.31%,
-      #91a1fa 85.11%
-    );
-  }
-  60% {
-    background: linear-gradient(
-      192.78deg,
-      #77c0af 9.02%,
-      #d1dc97 21.38%,
-      #e9a9b3 35.8%,
-      #d586e0 63.82%,
-      #91a1fa 79.48%
-    );
-  }
-  80% {
-    background: linear-gradient(
-      91.26deg,
-      #77c0af 0%,
-      #d1dc97 14.84%,
-      #e9a9b3 32.15%,
-      #d586e0 65.79%,
-      #91a1fa 84.58%
-    );
-  }
-  100% {
-    background: linear-gradient(
-      271.26deg,
-      #77c0af 0.52%,
-      #d1dc97 15.36%,
-      #e9a9b3 32.67%,
-      #d586e0 66.31%,
-      #91a1fa 85.11%
-    );
   }
 }
