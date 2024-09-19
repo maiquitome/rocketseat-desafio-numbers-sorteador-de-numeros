@@ -103,10 +103,10 @@ div#number-draw {
       }
     }
   }
+}
 
-  @keyframes changeIconPlace {
-    50% {
-      transform: translateX(50%);
-    }
+@keyframes changeIconPlace {
+  50% {
+    transform: translateX(50%);
   }
 }
