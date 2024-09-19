@@ -6,7 +6,8 @@ form {
       display: flex;
       gap: 0.5rem;
       & div.number-wrapper {
-        & div.number-label {
+        & label.number-label {
+          display: block;
           font: var(--font-label-medium);
           color: var(--color-content-secondary);
           padding-bottom: 0.5rem;
