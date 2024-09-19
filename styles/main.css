@@ -45,17 +45,20 @@ main {
       }
     }
   }
-  & > div:last-child {
-    max-width: 30.125rem;
-    margin-block: 2.125rem;
-    & div.label-large {
-      font: var(--font-label-large);
-      color: var(--color-content-primary);
+  & > div.draw-container {
+    width: 30.125rem;
+
+    & div.title-container {
+      & div.label-large {
+        font: var(--font-label-large);
+        color: var(--color-content-primary);
+      }
+      & p {
+        color: var(--color-content-secondary);
+        font: var(--font-paragraph-large);
+        padding-top: 0.125rem;
+      }
     }
-    & p {
-      color: var(--color-content-secondary);
-      font: var(--font-paragraph-large);
-      padding-top: 0.125rem;
-    }
+  }
   }
 }
