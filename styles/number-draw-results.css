@@ -1,0 +1,56 @@
+div#number-draw-results {
+  text-align: center;
+  margin-block: 3.6875rem;
+  /* height: 18.375rem; */
+
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: center;
+
+  & > div#numbers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    & > div.number-container {
+      height: 6.25rem;
+      margin-block: 2.5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* width: 6.25rem; */
+      /* font: 700 4rem/150% var(--font-family-mono); */
+      /* color: var(--color-content-inverse); */
+      /* background-color: var(--color-content-brand); */
+      /* border-radius: 1.75rem; */
+
+      & > span {
+        /* display: none; */
+        width: 5.25rem;
+        font: 700 3rem/150% var(--font-family-mono);
+        color: var(--color-content-brand);
+      }
+    }
+  }
+
+  & > button {
+    /* display: none; */
+    &:hover {
+      & img {
+        animation: rotateIcon 1s 0ms infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes rotateIcon {
+  to {
+    transform: rotate(360deg);
+  }
+}

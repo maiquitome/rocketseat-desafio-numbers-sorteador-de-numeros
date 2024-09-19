@@ -2,5 +2,6 @@
 @import url(container.css);
 @import url(switch.css);
 @import url(main.css);
-@import url(form.css);
 @import url(button.css);
+@import url(number-draw.css);
+@import url(number-draw-results.css);
