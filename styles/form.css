@@ -19,12 +19,30 @@ form {
           background-color: var(--color-background-secondary);
           border-radius: 0.5rem;
           border: none;
+          outline: none;
 
           color: var(--color-content-primary);
           font: var(--font-display-small);
           line-height: 0;
 
           text-align: center;
+
+          &:focus {
+            background-color: var(--color-background-tertiary);
+          }
+        }
+        &:has(input:focus) {
+          & label.number-label {
+            color: var(--color-content-brand);
+          }
+        }
+        &:hover {
+          & label.number-label {
+            color: var(--color-content-brand);
+          }
+          & input.number {
+            background-color: var(--color-background-tertiary);
+          }
         }
       }
     }
