@@ -35,12 +35,17 @@ function buildRandomNumber(min, max, isNotRepeatNumber, uniqueNumbers) {
 }
 
 function drawNumbers() {
-  const numbersQuantity = document.getElementById("numbers-quantity").value;
+  let numbersQuantity = document.getElementById("numbers-quantity").value;
   const minNumber = document.getElementById("min-number").value;
   const maxNumber = document.getElementById("max-number").value;
 
   const uniqueNumbers = [];
   const isNotRepeatNumber = document.getElementById("switch").checked;
+
+  if (isNotRepeatNumber && numbersQuantity > maxNumber) {
+    numbersQuantity = maxNumber;
+    console.log(numbersQuantity);
+  }
 
   buildRandomNumber(minNumber, maxNumber, isNotRepeatNumber, uniqueNumbers);
 
