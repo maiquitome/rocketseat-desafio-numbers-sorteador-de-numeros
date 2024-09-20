@@ -36,8 +36,8 @@ function buildRandomNumber(min, max, isNotRepeatNumber, uniqueNumbers) {
 
 function drawNumbers() {
   let numbersQuantity = document.getElementById("numbers-quantity").value;
-  const minNumber = document.getElementById("min-number").value;
-  const maxNumber = document.getElementById("max-number").value;
+  const minNumber = Number(document.getElementById("min-number").value);
+  const maxNumber = Number(document.getElementById("max-number").value);
 
   const uniqueNumbers = [];
   const isNotRepeatNumber = document.getElementById("switch").checked;
