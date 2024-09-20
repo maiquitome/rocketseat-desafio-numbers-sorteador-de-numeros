@@ -22,7 +22,7 @@ input[type="checkbox"]#switch {
     transition: ease-in-out 200ms;
   }
 
-  &:checked {
+  &:not(:checked) {
     background: var(--color-content-tertiary);
 
     &::after {
