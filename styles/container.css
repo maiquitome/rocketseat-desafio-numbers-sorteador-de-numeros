@@ -16,3 +16,15 @@
     }
   }
 }
+
+@media (max-width: 68.75rem) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & #logo {
+      transform: none;
+    }
+  }
+}

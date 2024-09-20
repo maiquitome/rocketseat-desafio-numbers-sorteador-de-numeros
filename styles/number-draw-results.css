@@ -167,3 +167,9 @@ div#number-draw-results {
     transform: rotate(-180deg);
   }
 }
+
+@media (max-width: 68.75rem) {
+  div#number-draw-results {
+    margin-block: 3.6875rem 3.0625rem;
+  }
+}
