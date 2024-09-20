@@ -34,7 +34,14 @@ function buildRandomNumber(min, max, isNotRepeatNumber, uniqueNumbers) {
   drawNumbersContainer.appendChild(numberContainer);
 }
 
+function changeQuantityOfDraws() {
+  const resultNumber = document.getElementById("result-number");
+  resultNumber.innerText = Number(resultNumber.innerText) + 1;
+}
+
 function drawNumbers() {
+  changeQuantityOfDraws();
+
   let numbersQuantity = document.getElementById("numbers-quantity").value;
   const minNumber = Number(document.getElementById("min-number").value);
   const maxNumber = Number(document.getElementById("max-number").value);
@@ -44,7 +51,6 @@ function drawNumbers() {
 
   if (isNotRepeatNumber && numbersQuantity > maxNumber) {
     numbersQuantity = maxNumber;
-    console.log(numbersQuantity);
   }
 
   buildRandomNumber(minNumber, maxNumber, isNotRepeatNumber, uniqueNumbers);
